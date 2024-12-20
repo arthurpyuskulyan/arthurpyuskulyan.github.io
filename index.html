@@ -7,21 +7,43 @@
     <style>
         body {
             background-image: url('ds.png');  /* Image in the same folder */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+            background-size: contain;  /* Makes the background image fit inside the screen */
+            background-position: center;  /* Centers the background image */
+            background-repeat: no-repeat;  /* Ensures the image doesn't repeat */
+            background-attachment: fixed;  /* Keeps the background fixed while scrolling */
             color: white;
             font-family: Arial, sans-serif;
             padding: 20px;
+            text-align: center;
         }
 
         h1 {
-            text-align: center;
+            margin-top: 20px;
         }
 
         .content {
-            text-align: center;
+            margin-top: 30px;
             padding-top: 50px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -32,7 +54,7 @@
         <p>Explore the sections below:</p>
     </div>
     <nav>
-        <ul style="text-align: center;">
+        <ul>
             <li><a href="about-me.html">About Me</a></li>
             <li><a href="experience.html">Experience</a></li>
             <li><a href="projects.html">Projects</a></li>
