@@ -8,22 +8,23 @@
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
-            text-align: center;
             background-color: #f4f4f4;
         }
 
         h1 {
             margin-top: 20px;
+            text-align: center;
         }
 
         .content {
             margin-top: 30px;
-            padding-top: 50px;
+            text-align: center;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
+            text-align: center;
         }
 
         nav ul li {
@@ -43,20 +44,19 @@
 
         .content-container {
             display: flex;
-            align-items: flex-start; /* Align content and image at the top */
-            gap: 20px; /* Add space between text and image */
+            align-items: flex-start; /* Align text and image at the top */
+            gap: 30px; /* Space between text and image */
             margin-top: 30px;
-            text-align: left; /* Align text properly within the container */
         }
 
         .text-content {
-            flex: 1; /* Allow the text to take up more space */
+            flex: 1; /* Allow the text to take up remaining space */
         }
 
         .image-container img {
-            width: 300px; /* Set a fixed width for the image */
+            width: 400px; /* Larger width for the image */
             height: auto; /* Maintain aspect ratio */
-            border-radius: 10px; /* Optional: Adds rounded corners */
+            border-radius: 10px; /* Optional: Adds rounded corners to the image */
         }
     </style>
 </head>
@@ -75,11 +75,11 @@
         </ul>
     </nav>
     <div class="content-container">
-        <div class="text-content">
-            <p>Molecules are fascinating because they hold the secrets to so many processes in nature, from the way light interacts with matter to the mechanics of chemical reactions and energy transfer. Each molecule is like its own little world, with atoms vibrating, rotating, and interacting in ways that reveal underlying physics, chemistry, and even the foundations of life itself. Plus, there’s always more to discover. Molecules can behave differently under various conditions, environments, or when they are excited by light, so exploring them often feels like solving a puzzle or uncovering a mystery.</p>
-        </div>
         <div class="image-container">
             <img src="posterpicture.png" alt="Project Image">
+        </div>
+        <div class="text-content">
+            <p>Molecules are fascinating because they hold the secrets to so many processes in nature, from the way light interacts with matter to the mechanics of chemical reactions and energy transfer. Each molecule is like its own little world, with atoms vibrating, rotating, and interacting in ways that reveal underlying physics, chemistry, and even the foundations of life itself. Plus, there’s always more to discover. Molecules can behave differently under various conditions, environments, or when they are excited by light, so exploring them often feels like solving a puzzle or uncovering a mystery.</p>
         </div>
     </div>
 </body>
