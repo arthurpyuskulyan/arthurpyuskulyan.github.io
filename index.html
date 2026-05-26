@@ -4,21 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to My Page</title>
+
     <style>
+
         body {
             font-family: Arial, sans-serif;
             padding: 20px;
-            background-color: #f4f4f4;
+            margin: 0;
+            background: transparent;
+        }
+
+        /* Background Video */
+        #bg-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        /* Dark overlay for readability */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.45);
+            z-index: -1;
         }
 
         h1 {
             margin-top: 20px;
             text-align: center;
+            color: white;
         }
 
         .content {
             margin-top: 30px;
             text-align: center;
+            color: white;
         }
 
         nav ul {
@@ -33,7 +61,7 @@
         }
 
         nav ul li a {
-            color: black;
+            color: white;
             text-decoration: none;
             font-weight: bold;
         }
@@ -44,41 +72,94 @@
 
         .content-container {
             display: flex;
-            align-items: flex-start; /* Align text and image at the top */
-            gap: 30px; /* Space between text and image */
+            align-items: flex-start;
+            gap: 30px;
             margin-top: 30px;
         }
 
         .text-content {
-            flex: 1; /* Allow the text to take up remaining space */
+            flex: 1;
+            color: white;
+            font-size: 18px;
+            line-height: 1.6;
         }
 
         .image-container img {
-            width: 800px; /* Larger width for the image */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 10px; /* Optional: Adds rounded corners to the image */
+            width: 800px;
+            height: auto;
+            border-radius: 10px;
         }
+
+        a {
+            color: #90cdf4;
+        }
+
     </style>
 </head>
+
 <body>
-    <h1>Welcome to my page (under construction).  </h1>
+
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="MDvid.mp4" type="video/mp4">
+    </video>
+
+    <h1>Welcome to my page (under construction).</h1>
+
     <div class="content">
-        <p> Hello and welcome! I am Arthur Pyuskulyan. This is the main page. Here you will find information about me, my experiences, and my projects. My github link including repositories can be found at https://github.com/arthurpyuskulyan </p>
+        <p>
+            Hello and welcome! I am Arthur Pyuskulyan.
+            This is the main page. Here you will find information about me,
+            my experiences, and my projects.
+            My github link including repositories can be found at
+            <a href="https://github.com/arthurpyuskulyan" target="_blank">
+                https://github.com/arthurpyuskulyan
+            </a>
+        </p>
+
         <p>Explore the sections below:</p>
     </div>
+
     <nav>
         <ul>
             <li><a href="CV_Pyuskulyan_Arthur.pdf" target="_blank">CV</a></li>
         </ul>
     </nav>
+
     <div class="content-container">
+
         <div class="image-container">
             <img src="posterpicture.jpg" alt="Project Image">
         </div>
+
         <div class="text-content">
-            <p>Molecules are fascinating because they hold the secrets to so many processes in nature, from the way light interacts with matter to the mechanics of chemical reactions, energy transfer, and excited state relaxation. Each molecule is like its own little world, with atoms vibrating, rotating, and interacting in ways that reveal underlying physics, chemistry, and even the foundations of life itself. Plus, there’s always more to discover. Molecules can behave differently under various conditions, environments, or when they are excited by light, so exploring them often feels like solving a puzzle or uncovering a mystery.</p>
-            <p>  I am dedicated to developing theoretical and computational skills modeling nature through math, physics, chemistry, and coding. I strive to spend the rest of my time working as a researcher. It is the unknown and it is very interesting solving important problems that have not yet been solved before or even thought of. Through research, I also seek to to develop skills in simulations and understanding nature to develop newer advanced technologies.  </p>
+
+            <p>
+                Molecules are fascinating because they hold the secrets to so many
+                processes in nature, from the way light interacts with matter to the
+                mechanics of chemical reactions, energy transfer, and excited state
+                relaxation. Each molecule is like its own little world, with atoms
+                vibrating, rotating, and interacting in ways that reveal underlying
+                physics, chemistry, and even the foundations of life itself.
+                Plus, there’s always more to discover. Molecules can behave
+                differently under various conditions, environments, or when they are
+                excited by light, so exploring them often feels like solving a
+                puzzle or uncovering a mystery.
+            </p>
+
+            <p>
+                I am dedicated to developing theoretical and computational skills
+                modeling nature through math, physics, chemistry, and coding.
+                I strive to spend the rest of my time working as a researcher.
+                It is the unknown and it is very interesting solving important
+                problems that have not yet been solved before or even thought of.
+                Through research, I also seek to develop skills in simulations and
+                understanding nature to develop newer advanced technologies.
+            </p>
+
         </div>
+
     </div>
+
 </body>
 </html>
