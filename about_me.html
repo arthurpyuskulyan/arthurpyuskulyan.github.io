@@ -4,14 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+
+            background-image: url("posterpicture.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .about-container {
+
+            background: rgba(255,255,255,0.85);
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            padding: 40px;
+
+            border-radius: 18px;
+
+            line-height: 1.8;
+
+            color: black;
+
+            font-size: 18px;
+
+            backdrop-filter: blur(6px);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .home-button {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .home-button a {
+
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+
+            background: rgba(0,0,0,0.65);
+
+            padding: 12px 20px;
+
+            border-radius: 8px;
+
+            transition: 0.3s;
+        }
+
+        .home-button a:hover {
+            background: rgba(0,0,0,0.9);
+        }
+
+    </style>
 </head>
+
 <body>
-    <h1>About Me</h1>
-    <p>Hello, I am Arthur Pyuskulyan   Molecules are fascinating because they hold the secrets to so many processes in nature, from the way light interacts with matter to the mechanics of chemical reactions and energy transfer. Each molecule is like its own little world, with atoms vibrating, rotating, and interacting in ways that reveal underlying physics, chemistry, and even the foundations of life itself.
-Plus, there is always more to discover. Molecules can behave differently under various conditions, environments, or when they are excited by light, so exploring them often feels like solving a puzzle or uncovering a mystery.
-.</p>
-    <img src="posterpicture.png" alt="About Me Image" width="800">
-    <br>
-    <a href="index.html">Back to Welcome Page</a>
+
+    <div class="home-button">
+        <a href="index.html">Back to Main Page</a>
+    </div>
+
+    <div class="about-container">
+
+        <h1>About Me</h1>
+
+        <p>
+            I started at UC Irvine where I earned my BS in Physics
+            with a specialization in condensed matter physics.
+            I was in Professor Jing Xia’s group from 5/2017 – 9/2018
+            focusing on experimental condensed matter physics.
+        </p>
+
+        <p>
+            In my project I synthesized crystals, spot welded and soldered,
+            prepared experiments in a dilution fridge, and analyzed data
+            with the goal of better understanding topological insulators
+            for building quantum computers.
+        </p>
+
+        <p>
+            There I developed and established my career dream to study
+            theoretical condensed matter physics and chemistry through
+            simulations and data analysis.
+        </p>
+
+        <p>
+            I joined Professor Kieron Burke’s group in the Physics and
+            Chemistry Department from 1/2019 – 2/2020.
+            I performed calculations on diamagnetic molecules computing
+            electric field gradients, nuclear magnetic resonance chemical
+            shifts, and magnetic anisotropies using density functional theory.
+        </p>
+
+        <p>
+            I analyzed the accuracy of density functional theory to predict
+            nuclear magnetic resonance (NMR) properties using different
+            functionals and pseudopotentials. I used spreadsheets, scripts,
+            and statistical analysis to determine accuracies and explored
+            ways to improve NMR predictions.
+        </p>
+
+        <p>
+            I started at UC Merced in Fall 2021 and have been in
+            Professor Christine Isborn’s group since then.
+        </p>
+
+    </div>
+
 </body>
 </html>
