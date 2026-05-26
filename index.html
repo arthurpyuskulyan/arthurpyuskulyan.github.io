@@ -89,53 +89,23 @@
             text-decoration: underline;
         }
 
-        .content-container {
-            display: flex;
-            align-items: flex-start;
-            gap: 30px;
-            margin-top: 30px;
+        /* Centered image section */
+        .image-section {
+            text-align: center;
+            margin-top: 40px;
         }
 
-        /* Main text section */
-        .text-content {
-            flex: 1;
-            color: black;
-            font-size: 18px;
-            line-height: 1.6;
+        .image-section img {
+            width: 900px;
+            max-width: 95%;
+            height: auto;
+
+            border-radius: 16px;
 
             background: rgba(255,255,255,0.82);
-
-            padding: 25px;
-            border-radius: 12px;
+            padding: 10px;
 
             backdrop-filter: blur(6px);
-        }
-
-        .image-container img {
-            width: 800px;
-            height: auto;
-            border-radius: 12px;
-        }
-
-        a {
-            color: #0056b3;
-        }
-
-        @media (max-width: 1200px) {
-            .content-container {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .image-container img {
-                width: 100%;
-                max-width: 800px;
-            }
-
-            .text-content {
-                width: 100%;
-                max-width: 1000px;
-            }
         }
 
     </style>
@@ -154,8 +124,8 @@
 
         <p>
             Hello and welcome! I am Arthur Pyuskulyan.
-            This is the main page. Here you will find information
-            about me, my experiences, and my projects.
+            This website contains information about my research,
+            projects, and academic work.
         </p>
 
         <p>
@@ -183,18 +153,9 @@
         </ul>
     </nav>
 
-    <div class="content-container">
-
-        <!-- Image -->
-        <div class="image-container">
-            <img src="posterpicture.jpg" alt="Project Image">
-        </div>
-
-        <!-- Text -->
-        <div class="text-content">
-
-        </div>
-
+    <!-- Centered Image -->
+    <div class="image-section">
+        <img src="posterpicture.jpg" alt="Poster Image">
     </div>
 
 </body>
