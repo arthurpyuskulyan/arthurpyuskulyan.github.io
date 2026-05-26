@@ -25,34 +25,46 @@
             z-index: -2;
         }
 
-        /* Dark overlay for readability */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.45);
-            z-index: -1;
-        }
-
+        /* Title box */
         h1 {
             margin-top: 20px;
             text-align: center;
-            color: white;
+            color: black;
+
+            background: rgba(255,255,255,0.82);
+            display: inline-block;
+
+            padding: 15px 25px;
+            border-radius: 12px;
+
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
+        /* Intro box */
         .content {
             margin-top: 30px;
             text-align: center;
-            color: white;
+            color: black;
+
+            background: rgba(255,255,255,0.82);
+
+            padding: 20px;
+            border-radius: 12px;
+
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+
+            backdrop-filter: blur(6px);
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
             text-align: center;
+            margin-top: 20px;
         }
 
         nav ul li {
@@ -64,6 +76,10 @@
             color: white;
             text-decoration: none;
             font-weight: bold;
+
+            background: rgba(0,0,0,0.55);
+            padding: 10px 18px;
+            border-radius: 8px;
         }
 
         nav ul li a:hover {
@@ -77,21 +93,29 @@
             margin-top: 30px;
         }
 
+        /* Main text section */
         .text-content {
             flex: 1;
-            color: white;
+            color: black;
             font-size: 18px;
             line-height: 1.6;
+
+            background: rgba(255,255,255,0.82);
+
+            padding: 25px;
+            border-radius: 12px;
+
+            backdrop-filter: blur(6px);
         }
 
         .image-container img {
             width: 800px;
             height: auto;
-            border-radius: 10px;
+            border-radius: 12px;
         }
 
         a {
-            color: #90cdf4;
+            color: #0056b3;
         }
 
     </style>
@@ -107,10 +131,11 @@
     <h1>Welcome to my page (under construction).</h1>
 
     <div class="content">
+
         <p>
             Hello and welcome! I am Arthur Pyuskulyan.
-            This is the main page. Here you will find information about me,
-            my experiences, and my projects.
+            This is the main page. Here you will find information
+            about me, my experiences, and my projects.
             My github link including repositories can be found at
             <a href="https://github.com/arthurpyuskulyan" target="_blank">
                 https://github.com/arthurpyuskulyan
@@ -118,11 +143,14 @@
         </p>
 
         <p>Explore the sections below:</p>
+
     </div>
 
     <nav>
         <ul>
-            <li><a href="CV_Pyuskulyan_Arthur.pdf" target="_blank">CV</a></li>
+            <li>
+                <a href="CV_Pyuskulyan_Arthur.pdf" target="_blank">CV</a>
+            </li>
         </ul>
     </nav>
 
@@ -135,26 +163,28 @@
         <div class="text-content">
 
             <p>
-                Molecules are fascinating because they hold the secrets to so many
-                processes in nature, from the way light interacts with matter to the
-                mechanics of chemical reactions, energy transfer, and excited state
-                relaxation. Each molecule is like its own little world, with atoms
-                vibrating, rotating, and interacting in ways that reveal underlying
-                physics, chemistry, and even the foundations of life itself.
+                Molecules are fascinating because they hold the secrets
+                to so many processes in nature, from the way light interacts
+                with matter to the mechanics of chemical reactions, energy
+                transfer, and excited state relaxation. Each molecule is like
+                its own little world, with atoms vibrating, rotating, and
+                interacting in ways that reveal underlying physics,
+                chemistry, and even the foundations of life itself.
                 Plus, there’s always more to discover. Molecules can behave
-                differently under various conditions, environments, or when they are
-                excited by light, so exploring them often feels like solving a
-                puzzle or uncovering a mystery.
+                differently under various conditions, environments, or when
+                they are excited by light, so exploring them often feels
+                like solving a puzzle or uncovering a mystery.
             </p>
 
             <p>
-                I am dedicated to developing theoretical and computational skills
-                modeling nature through math, physics, chemistry, and coding.
-                I strive to spend the rest of my time working as a researcher.
-                It is the unknown and it is very interesting solving important
-                problems that have not yet been solved before or even thought of.
-                Through research, I also seek to develop skills in simulations and
-                understanding nature to develop newer advanced technologies.
+                I am dedicated to developing theoretical and computational
+                skills modeling nature through math, physics, chemistry,
+                and coding. I strive to spend the rest of my time working
+                as a researcher. It is the unknown and it is very interesting
+                solving important problems that have not yet been solved
+                before or even thought of. Through research, I also seek
+                to develop skills in simulations and understanding nature
+                to develop newer advanced technologies.
             </p>
 
         </div>
